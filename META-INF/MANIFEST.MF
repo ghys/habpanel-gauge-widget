@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gauge widget for HABPanel
+Bundle-SymbolicName: org.openhab.ui.habpanel.widget.gauge
+Bundle-Version: 2.1.0.qualifier
+Bundle-Vendor: Yannick Schaus
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Service-Component: OSGI-INF/*.xml
+Import-Package: org.osgi.framework,
+ org.osgi.service.cm,
+ org.osgi.service.http,
+ org.slf4j

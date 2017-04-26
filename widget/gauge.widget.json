@@ -1,0 +1,75 @@
+{
+    "template": "<div oc-lazy-load=\"['/habpanel-resources/gauge/gauge.directive.js']\"\n     style=\"position: absolute; top: 10px; left: 10px; width: calc(100% - 20px); height: calc(100% - 20px);\">\n  <gauge value=\"itemState(config.item) || config.min\" label=\"ngModel.name\" label-scale=\"config.label_scale\"\n         unit=\"config.unit\" min=\"config.min\" max=\"config.max\"\n         yellow-zone=\"config.yellow_zone\" red-zone=\"config.red_zone\" include-green-zone=\"config.include_green_zone\"\n         major-ticks=\"config.major_ticks\" minor-ticks=\"config.minor_ticks\" />\n</div>",
+    "name": "Gauge",
+    "author": "Yannick Schaus",
+    "description": "A gauge to display numerical value",
+    "settings": [
+        {
+            "type": "item",
+            "id": "item",
+            "label": "Item"
+        },
+        {
+            "type": "string",
+            "id": "unit",
+            "label": "Unit",
+            "description": ""
+        },
+        {
+            "type": "number",
+            "default": "0",
+            "id": "min",
+            "label": "Min"
+        },
+        {
+            "type": "number",
+            "id": "max",
+            "label": "Max",
+            "default": "100"
+        },
+        {
+            "type": "number",
+            "id": "major_ticks",
+            "label": "Major ticks",
+            "default": "5"
+        },
+        {
+            "type": "number",
+            "id": "minor_ticks",
+            "label": "Minor ticks",
+            "default": "5"
+        },
+        {
+            "type": "heading",
+            "label": "Yellow/red zones",
+            "description": "You can set either both or none of these thresholds. If you want a yellow zone then a red zone for the higher values, set the yellow zone below the red zone threshold (example: min=0, max=100, yellow=75, red=90). If you want a red zone then a yellow zone for the lower values, set the red zone threshold below the yellow zone threshold (example: min=0, max=100, yellow=25, red=10)."
+        },
+        {
+            "type": "number",
+            "id": "yellow_zone",
+            "label": "Yellow zone threshold"
+        },
+        {
+            "type": "number",
+            "id": "red_zone",
+            "label": "Red zone threshold"
+        },
+        {
+            "type": "checkbox",
+            "id": "include_green_zone",
+            "label": "Green zone",
+            "description": "The green zone will cover the rest of the gauge (optional)"
+        },
+        {
+            "type": "heading",
+            "label": "Display"
+        },
+        {
+            "type": "number",
+            "id": "label_scale",
+            "label": "Label scale",
+            "description": "Use to resize the gauge label text (in percentage of the original size). Optional, default 100%.",
+            "default": "100"
+        }
+    ]
+}
