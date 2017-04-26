@@ -9,3 +9,7 @@ It also serves as a demonstration on how additional code, here an AngularJS dire
 ### Acknowledgments
 
 This project contains a gauge directive based on [this Gist](https://gist.github.com/tomerd/1499279) by Tomer Doron - huge thanks to him!
+
+### Screenshot
+
+![gauge](https://cloud.githubusercontent.com/assets/2004147/25433024/34dc4bd6-2a87-11e7-98ca-c254330cc830.png)
